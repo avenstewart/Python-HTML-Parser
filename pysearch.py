@@ -81,9 +81,9 @@ def _cli(args):
             description=__doc__,
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    f_help = ("Provide the report directory '-f /path/to/report(s)")
-    s_help = ("Patch individual extent report.")
-    b_help = ("Recursively patch all reports in all subdirectories.")
+    f_help = ("Provide the report directory '-f /path/to/file(s)")
+    s_help = ("Search individual files.")
+    b_help = ("Recursively search files in all subdirectories.")
 
     parser.add_argument('-f', '--filepath', help=f_help, required=True)
     parser.add_argument('-s', '--single', action="store_true", help=s_help)
